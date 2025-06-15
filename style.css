@@ -1,0 +1,71 @@
+body{
+    margin: auto;
+    width: 30vw;
+    text-align: center;
+}
+
+pre{
+    text-align: start;
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  button {
+    all: unset;
+    cursor: pointer;
+    border: 2px solid black;
+    padding: 4px;
+    margin: 4px;
+  }
+
+.border{
+    border: 2px solid black;
+}
+
+.flex{
+    display: flex;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.col{
+    flex-direction: column;
+}
+
+.align{
+    justify-content: center;
+}
+
+.p-4{
+    padding: 16px;
+}
+
+.w{
+    width: 50%;
+}
+
+.m0 {
+    margin: auto;
+}
+
+.dev-menu{
+    bottom: 5%;
+    left: 5%;
+    position: absolute;
+}
+
+.box{
+    width: 20vw;
+    border: 2px solid red;
+    top: 5%;
+    right: 5%;
+    position: absolute;
+}

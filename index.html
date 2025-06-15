@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Game Screen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex col">
+    <div id="boss-container">
+        <div id="boss-sprite" >
+            <pre class="border">
+                <p>
+                    .--,
+                    /  (
+                   /    \
+                  /      \ 
+                 /  0  0  \
+         ((()   |    ()    |   ()))
+         \  ()  (  .____.  )  ()  /
+          |` \_/ \  `""`  / \_/ `|
+          |       `.'--'.`       |
+           \        `""`        /
+            \                  /
+             `.              .'    ,
+              |`             |  _.'|
+              |              `-'  /
+              \                 .'
+               `.____________.-'
+                </p>
+            </pre>
+            <div id="boss-stats" class="border">
+                <h3>Bob the ghost</h3>
+                <div class="">
+                    <p id="boss-health">health : 125 </p>
+                    <p>attack : 25 </p>
+                    <p>defense : 20 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="player-container" class="flex row align border">
+        <div id="player-1" class="w">
+            <h4>Player 1</h4>
+            <div id="player-1-stats" class="">
+                <p id="player-1-xp">current xp : 3 / 20</p>
+                <p id="player-1-health">health : 100</p>
+                <p id="player-1-atk">attack : 10</p>
+                <p id="player-1-def">defense : 10 </p>
+            </div>
+        </div>
+
+        <div id="player-2" class="w">
+            <h4>Player 2</h4>
+            <div id="player-2-stats">
+                <p id="player-2-xp">current xp: 5 / 10</p>
+                <p id="player-2-health">health : 100</p>
+                <p id="player-2-atk">attack : 15</p>
+                <p id="player-2-def">defense : 5 </p>
+            </div>
+        </div>
+    </div>
+    <div id="dev-menu" class="dev-menu">
+        <ul class="border p-4">
+            <li><button onclick="useXp1()">Usar xp player 1</button></li>
+            <li><button onclick="getXp1()">Terminar tarefa player 1</button></li>
+            <li><button onclick="addTask1()">Acresentar tarefa player 1</button></li>
+        </ul>
+        <ul class="border p-4">
+            <li><button onclick="endTurn()">Terminar turno</button></li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <p id="textbox">Explicação</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
